@@ -1,0 +1,135 @@
+project:
+  title: ""                    # To be filled by Coordinator
+  theme_raw: ""                # User's exact input
+  core_tension: ""             # One sentence — filled by Coordinator
+  genre: ""                    # Filled by Coordinator
+  created: ""                  # Timestamp
+  target_word_count: 20000
+  draft_word_count_target: 25000
+  chapter_count: 4
+
+current_phase: plan            # plan | research | design | write | review | publish | done
+current_agent: coordinator
+
+# ─────────────────────────────────────────────
+# PHASE: PLAN
+# ─────────────────────────────────────────────
+phases:
+  plan:
+    status: in_progress        # todo | in_progress | done | blocked
+    agent: coordinator
+    steps: [1, 2]
+    gate: G2
+    gate_conditions:
+      material_audit_complete: false
+      research_gaps_listed: false        # minimum 8 gaps
+      core_tension_articulated: false
+      specs_locked: false                # POV, tense, tone, forbidden words
+      forbidden_word_list_minimum_10: false
+
+  # ─────────────────────────────────────────────
+  # PHASE: RESEARCH
+  # ─────────────────────────────────────────────
+  research:
+    status: todo
+    agent: researcher
+    steps: [3]
+    gate: G3
+    gate_conditions:
+      fact_cards_minimum_30: false
+      all_cards_high_or_medium_confidence: false
+      minimum_5_categories: false
+      story_relevance_documented: false
+
+  # ─────────────────────────────────────────────
+  # PHASE: DESIGN
+  # ─────────────────────────────────────────────
+  design:
+    status: todo
+    agents: [character_designer, plot_designer, world_builder, character_designer]
+    steps: [4, 5, 6, 7]
+    gate: G7
+    gate_conditions:
+      character_profiles_minimum_3_main: false
+      character_profiles_minimum_3_supporting: false
+      character_arcs_documented: false
+      relationship_map_complete: false
+      plot_structure_4_chapters: false
+      each_chapter_5_beats: false
+      scenes_minimum_20: false
+      foreshadowing_threads_minimum_12: false
+      world_bible_complete: false
+      world_locations_minimum_5: false
+      style_guide_minimum_3_samples: false
+
+  # ─────────────────────────────────────────────
+  # PHASE: WRITE
+  # ─────────────────────────────────────────────
+  write:
+    status: todo
+    agent: writer
+    steps: [8, 9, 10]
+    gate: G10
+    gate_conditions:
+      draft_all_4_chapters_exist: false
+      draft_word_count_minimum_25000: false    # after Step 08
+      continuity_errors_zero_remaining: false  # after Step 09
+      final_word_count_minimum_20000: false    # after Step 10
+      dialogue_ratio_25_to_35_percent: false   # after Step 10
+
+  # ─────────────────────────────────────────────
+  # PHASE: REVIEW
+  # ─────────────────────────────────────────────
+  review:
+    status: todo
+    agents: [sensitivity_reader, editor, editor, editor]
+    steps: [11, 12, 13, 14]
+    gate: G14
+    gate_conditions:
+      sensitivity_items_zero_remaining: false  # after Step 11
+      theme_present_all_chapters: false        # after Step 12
+      technical_facts_100_percent_verified: false  # after Step 13
+      all_12_metrics_pass: false               # after Step 14
+
+  # ─────────────────────────────────────────────
+  # PHASE: PUBLISH
+  # ─────────────────────────────────────────────
+  publish:
+    status: todo
+    agent: publisher
+    steps: [15]
+    gate: G15
+    gate_conditions:
+      novel_final_compiled: false
+      delivery_check_8_of_8: false
+      word_count_verified_minimum_20000: false
+
+  # ─────────────────────────────────────────────
+  # PHASE: DONE
+  # ─────────────────────────────────────────────
+  done:
+    status: todo
+    completed_at: null
+
+# ─────────────────────────────────────────────
+# WORD COUNT TRACKING (updated by Writer and Publisher)
+# ─────────────────────────────────────────────
+word_counts:
+  chapter_01: 0
+  chapter_02: 0
+  chapter_03: 0
+  chapter_04: 0
+  total_draft: 0
+  total_final: 0
+
+# ─────────────────────────────────────────────
+# BLOCKED STATE LOG (filled in if any phase is blocked)
+# ─────────────────────────────────────────────
+blocked_states: []
+# Example entry:
+# - phase: write
+#   step: 9
+#   agent: continuity_checker
+#   reason: "Plot hole in Chapter 2 requires Writer to rewrite scene 2.3"
+#   reported_at: "2025-01-01_1200_UTC"
+#   resolved_at: null

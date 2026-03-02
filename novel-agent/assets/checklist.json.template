@@ -1,0 +1,134 @@
+{
+  "project": "",
+  "audit_date": null,
+  "auditor": "editor",
+  "overall_status": "PENDING",
+  "metrics": [
+    {
+      "id": "M01",
+      "name": "Story Completeness",
+      "description": "The novel has a sufficient chapter and paragraph structure",
+      "method": "Count chapters and paragraphs per chapter",
+      "threshold": "3-6 chapters; each chapter ≥5 paragraphs",
+      "actual": null,
+      "status": "PENDING",
+      "notes": null
+    },
+    {
+      "id": "M02",
+      "name": "Word Count",
+      "description": "The final novel meets the minimum length requirement",
+      "method": "Count words in all chapter draft files",
+      "threshold": "≥20,000 words total",
+      "actual": null,
+      "status": "PENDING",
+      "notes": null
+    },
+    {
+      "id": "M03",
+      "name": "Dialogue Ratio",
+      "description": "Dialogue is present in appropriate proportion",
+      "method": "Estimate dialogue words as percentage of total words",
+      "threshold": "25%–35% of total words in dialogue",
+      "actual": null,
+      "status": "PENDING",
+      "notes": null
+    },
+    {
+      "id": "M04",
+      "name": "Character Arc",
+      "description": "All main characters have documented transformation trajectories",
+      "method": "Verify each main character's arc from Chapter 1 start to Chapter 4 end",
+      "threshold": "All main characters (minimum 3) have a complete, documented arc",
+      "actual": null,
+      "status": "PENDING",
+      "notes": null
+    },
+    {
+      "id": "M05",
+      "name": "Fact Accuracy",
+      "description": "Research fact cards are present and credible",
+      "method": "Count fact cards in facts/research_cards.md; verify confidence levels",
+      "threshold": "Minimum 30 fact cards; all confidence HIGH or MEDIUM (none LOW)",
+      "actual": null,
+      "status": "PENDING",
+      "notes": null
+    },
+    {
+      "id": "M06",
+      "name": "Foreshadowing System",
+      "description": "Foreshadowing threads are planted and resolved",
+      "method": "Audit continuity/threads.json for setup, activation, and payoff",
+      "threshold": "Minimum 12 threads; all threads resolved before the novel ends",
+      "actual": null,
+      "status": "PENDING",
+      "notes": null
+    },
+    {
+      "id": "M07",
+      "name": "Continuity",
+      "description": "No unresolved continuity errors remain in the manuscript",
+      "method": "Check continuity/checks.md for unresolved items",
+      "threshold": "0 continuity errors remaining (all found errors fixed)",
+      "actual": null,
+      "status": "PENDING",
+      "notes": null
+    },
+    {
+      "id": "M08",
+      "name": "Sensitivity",
+      "description": "No unresolved sensitivity flags remain in the manuscript",
+      "method": "Check continuity/checks.md sensitivity section for unresolved items",
+      "threshold": "0 sensitivity flags remaining (all found flags fixed)",
+      "actual": null,
+      "status": "PENDING",
+      "notes": null
+    },
+    {
+      "id": "M09",
+      "name": "Theme Resonance",
+      "description": "The core theme is present and resonant in every chapter",
+      "method": "Verify theme presence per chapter (STRONG/ADEQUATE/WEAK/ABSENT)",
+      "threshold": "All 4 chapters rated ADEQUATE or STRONG",
+      "actual": null,
+      "status": "PENDING",
+      "notes": null
+    },
+    {
+      "id": "M10",
+      "name": "Technical Accuracy",
+      "description": "All technical claims in the manuscript are traceable to fact cards",
+      "method": "Cross-reference technical claims against facts/research_cards.md",
+      "threshold": "100% of technical claims verified or confirmed as common knowledge",
+      "actual": null,
+      "status": "PENDING",
+      "notes": null
+    },
+    {
+      "id": "M11",
+      "name": "Style Consistency",
+      "description": "POV, tense, and tone are consistent throughout the manuscript",
+      "method": "Scan for POV violations, tense switches, and forbidden words",
+      "threshold": "0 POV violations; 0 tense switches; 0 forbidden word usages",
+      "actual": null,
+      "status": "PENDING",
+      "notes": null
+    },
+    {
+      "id": "M12",
+      "name": "Scene Saturation",
+      "description": "Key scenes have sufficient sensory grounding",
+      "method": "Count distinct sensory details (sight, sound, smell, touch, taste) per key scene",
+      "threshold": "Minimum 3 distinct sensory types per key scene",
+      "actual": null,
+      "status": "PENDING",
+      "notes": null
+    }
+  ],
+  "summary": {
+    "pass_count": 0,
+    "fail_count": 0,
+    "pending_count": 12,
+    "final_verdict": "PENDING"
+  }
+}

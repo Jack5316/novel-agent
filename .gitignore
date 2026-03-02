@@ -1,0 +1,39 @@
+# 项目生成的文件
+state/
+draft/
+out/
+facts/
+characters/
+beats/
+continuity/
+bible/
+
+# 虚拟环境
+.venv/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# 日志文件
+*.log
+*.err
+
+# 编辑器文件
+.vscode/
+.idea/
+*.iml
+
+# 脚本输出
+*.pdf
+*.docx
+
+# 其他
+*.pyc
+__pycache__/

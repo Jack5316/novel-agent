@@ -1,0 +1,23 @@
+# Novel Agent System — Execution Log
+# ============================================
+# Project: [THEME]
+# Started: [TIMESTAMP]
+# System: 10-Agent Novel Writing Framework
+# Protocol: 5-Act Inner Monologue + Strict YAML Handoff
+# ============================================
+#
+# APPEND-ONLY FILE — Never delete or modify existing entries.
+# Each agent appends their 5-act inner monologue here.
+# All handoffs are also recorded in state/HANDOFF_QUEUE.yaml.
+#
+# Log Format per Agent Entry:
+# ---
+# ## [AGENT_NAME] | STEP [N] | [TIMESTAMP]
+# ### Act 1 — Character Introduction
+# ### Act 2 — Input Observation
+# ### Act 3 — Inner Monologue
+# ### Act 4 — Decision Process
+# ### Act 5 — Action Execution
+# ---
+# ============================================
+
