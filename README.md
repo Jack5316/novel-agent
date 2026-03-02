@@ -169,4 +169,4 @@ MIT License
 
 如有问题或建议，请通过以下方式联系：
 - GitHub Issues：https://github.com/Jack5316/novel-agent/issues
-- Email：your.email@example.com
+- Email：jiaweitan531@gmail.com
